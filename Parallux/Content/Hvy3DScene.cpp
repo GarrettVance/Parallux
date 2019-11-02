@@ -34,9 +34,9 @@ void Hvy3DScene::gvInitializeSchlafliSymbol(unsigned int SchlafliP, unsigned int
         throw "(p-2)(q-2) must be greater than 4";
     }
 
-    e_apothem = HvyDXBase::ApothemFromSchlafli(SchlafliP, SchlafliQ);
+    e_apothem = HvyDXBase::HC_ApothemFromSchlafli_D(SchlafliP, SchlafliQ);
 
-    e_circumradius = HvyDXBase::CircumradiusFromSchlafliCOSH(SchlafliP, SchlafliQ);
+    e_circumradius = HvyDXBase::HC_CircumradiusFromSchlafli_D(SchlafliP, SchlafliQ);
 }
 
 
